@@ -1,20 +1,17 @@
-import React from "react";
-// import SignUp from './Components/Login-signup/LoginSignUp'
-import Navbar from "./Components/Navbar/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignUp from "./Components/Signup/SignUp";
-import Login from "./Components/Login/Login";
+import React from 'react'
+import Register from './Components/Register'
 
 const App = () => {
-  return <div>
-    <Navbar/>
-    <BrowserRouter>      
-      <Routes>
-        <Route path="/signup" element={<SignUp/>}></Route>
-        <Route path="/login" element={<Login/>}></Route>
-      </Routes>
-    </BrowserRouter>
-  </div>;
-};
+  return (
+    <main style={{
+      display:"flex",
+      alignItems:'center',
+      justifyContent:'center',
+      marginTop:'100px'
+    }}>
+      <Register/>
+    </main>
+  )
+}
 
-export default App;
+export default App
